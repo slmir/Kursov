@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FE7F7B9-6AA0-4C39-A187-F84CC7B345D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kurs_Work_BD</RootNamespace>
+    <AssemblyName>Kurs-Work-BD</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Images.Designer.cs">
+      <DependentUpon>Images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_Kurs_WORKDataSet_Otchets1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet_Otchets1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Администратор_ПД.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Администратор_ПД.Designer.cs">
+      <DependentUpon>Администратор_ПД.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Директор_ПД.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Директор_ПД.Designer.cs">
+      <DependentUpon>Директор_ПД.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доступ_к_системе.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доступ_к_системе.Designer.cs">
+      <DependentUpon>Доступ_к_системе.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Kurs_WORKDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Kurs_WORKDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Информация_о_фитнес_центре.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Информация_о_фитнес_центре.Designer.cs">
+      <DependentUpon>Информация_о_фитнес_центре.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Клиент_ПД.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Клиент_ПД.Designer.cs">
+      <DependentUpon>Клиент_ПД.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Менеджер_ПД.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Менеджер_ПД.Designer.cs">
+      <DependentUpon>Менеджер_ПД.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Начальная_форма.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Начальная_форма.Designer.cs">
+      <DependentUpon>Начальная_форма.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Новый клиент.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Новый клиент.Designer.cs">
+      <DependentUpon>Новый клиент.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_абонементы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_абонементы.Designer.cs">
+      <DependentUpon>Отчет_абонементы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_закупленные_товары.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_закупленные_товары.Designer.cs">
+      <DependentUpon>Отчет_закупленные_товары.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_клиенты.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_клиенты.Designer.cs">
+      <DependentUpon>Отчет_клиенты.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_клиенты_управляющий.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_клиенты_управляющий.Designer.cs">
+      <DependentUpon>Отчет_клиенты_управляющий.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_оформленные_абонементы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_оформленные_абонементы.Designer.cs">
+      <DependentUpon>Отчет_оформленные_абонементы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_посещения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_посещения.Designer.cs">
+      <DependentUpon>Отчет_посещения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_поставщики.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_поставщики.Designer.cs">
+      <DependentUpon>Отчет_поставщики.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_продажа_товаров.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_продажа_товаров.Designer.cs">
+      <DependentUpon>Отчет_продажа_товаров.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_сотрудники_должности.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_сотрудники_должности.Designer.cs">
+      <DependentUpon>Отчет_сотрудники_должности.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_сотрудники_клиент.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_сотрудники_клиент.Designer.cs">
+      <DependentUpon>Отчет_сотрудники_клиент.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_сотрудники_специализация.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_сотрудники_специализация.Designer.cs">
+      <DependentUpon>Отчет_сотрудники_специализация.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_табель.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_табель.Designer.cs">
+      <DependentUpon>Отчет_табель.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_товары_клиент.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_товары_клиент.Designer.cs">
+      <DependentUpon>Отчет_товары_клиент.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_тренировки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_тренировки.Designer.cs">
+      <DependentUpon>Отчет_тренировки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_тренировки_клиент.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_тренировки_клиент.Designer.cs">
+      <DependentUpon>Отчет_тренировки_клиент.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_услуги.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_услуги.Designer.cs">
+      <DependentUpon>Отчет_услуги.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отчет_ЧС_карт.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отчет_ЧС_карт.Designer.cs">
+      <DependentUpon>Отчет_ЧС_карт.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_абонементы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_абонементы.Designer.cs">
+      <DependentUpon>Таблица_абонементы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_должности.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_должности.Designer.cs">
+      <DependentUpon>Таблица_должности.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_карты_в_черном_списке.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_карты_в_черном_списке.Designer.cs">
+      <DependentUpon>Таблица_карты_в_черном_списке.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_клиенты.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_клиенты.Designer.cs">
+      <DependentUpon>Таблица_клиенты.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_оформленные_абонементы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_оформленные_абонементы.Designer.cs">
+      <DependentUpon>Таблица_оформленные_абонементы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_посещения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_посещения.Designer.cs">
+      <DependentUpon>Таблица_посещения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_поставщики.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_поставщики.Designer.cs">
+      <DependentUpon>Таблица_поставщики.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_продажа_товаров.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_продажа_товаров.Designer.cs">
+      <DependentUpon>Таблица_продажа_товаров.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_сотрудники.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_сотрудники.Designer.cs">
+      <DependentUpon>Таблица_сотрудники.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_специализация.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_специализация.Designer.cs">
+      <DependentUpon>Таблица_специализация.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_табель.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_табель.Designer.cs">
+      <DependentUpon>Таблица_табель.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_товары.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_товары.Designer.cs">
+      <DependentUpon>Таблица_товары.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_тренировки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_тренировки.Designer.cs">
+      <DependentUpon>Таблица_тренировки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Таблица_услуги.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Таблица_услуги.Designer.cs">
+      <DependentUpon>Таблица_услуги.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Управляющий_ПД.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Управляющий_ПД.Designer.cs">
+      <DependentUpon>Управляющий_ПД.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images.resx">
+      <DependentUpon>Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Администратор_ПД.resx">
+      <DependentUpon>Администратор_ПД.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Директор_ПД.resx">
+      <DependentUpon>Директор_ПД.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доступ_к_системе.resx">
+      <DependentUpon>Доступ_к_системе.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Информация_о_фитнес_центре.resx">
+      <DependentUpon>Информация_о_фитнес_центре.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Клиент_ПД.resx">
+      <DependentUpon>Клиент_ПД.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Менеджер_ПД.resx">
+      <DependentUpon>Менеджер_ПД.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Начальная_форма.resx">
+      <DependentUpon>Начальная_форма.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Новый клиент.resx">
+      <DependentUpon>Новый клиент.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_абонементы.resx">
+      <DependentUpon>Отчет_абонементы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_закупленные_товары.resx">
+      <DependentUpon>Отчет_закупленные_товары.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_клиенты.resx">
+      <DependentUpon>Отчет_клиенты.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_клиенты_управляющий.resx">
+      <DependentUpon>Отчет_клиенты_управляющий.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_оформленные_абонементы.resx">
+      <DependentUpon>Отчет_оформленные_абонементы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_посещения.resx">
+      <DependentUpon>Отчет_посещения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_поставщики.resx">
+      <DependentUpon>Отчет_поставщики.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_продажа_товаров.resx">
+      <DependentUpon>Отчет_продажа_товаров.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_сотрудники_должности.resx">
+      <DependentUpon>Отчет_сотрудники_должности.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_сотрудники_клиент.resx">
+      <DependentUpon>Отчет_сотрудники_клиент.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_сотрудники_специализация.resx">
+      <DependentUpon>Отчет_сотрудники_специализация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_табель.resx">
+      <DependentUpon>Отчет_табель.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_товары_клиент.resx">
+      <DependentUpon>Отчет_товары_клиент.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_тренировки.resx">
+      <DependentUpon>Отчет_тренировки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_тренировки_клиент.resx">
+      <DependentUpon>Отчет_тренировки_клиент.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_услуги.resx">
+      <DependentUpon>Отчет_услуги.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отчет_ЧС_карт.resx">
+      <DependentUpon>Отчет_ЧС_карт.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_абонементы.resx">
+      <DependentUpon>Таблица_абонементы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_должности.resx">
+      <DependentUpon>Таблица_должности.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_карты_в_черном_списке.resx">
+      <DependentUpon>Таблица_карты_в_черном_списке.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_клиенты.resx">
+      <DependentUpon>Таблица_клиенты.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_оформленные_абонементы.resx">
+      <DependentUpon>Таблица_оформленные_абонементы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_посещения.resx">
+      <DependentUpon>Таблица_посещения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_поставщики.resx">
+      <DependentUpon>Таблица_поставщики.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_продажа_товаров.resx">
+      <DependentUpon>Таблица_продажа_товаров.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_сотрудники.resx">
+      <DependentUpon>Таблица_сотрудники.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_специализация.resx">
+      <DependentUpon>Таблица_специализация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_табель.resx">
+      <DependentUpon>Таблица_табель.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_товары.resx">
+      <DependentUpon>Таблица_товары.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_тренировки.resx">
+      <DependentUpon>Таблица_тренировки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Таблица_услуги.resx">
+      <DependentUpon>Таблица_услуги.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Управляющий_ПД.resx">
+      <DependentUpon>Управляющий_ПД.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Kurs_WORKDataSet.xsc">
+      <DependentUpon>_Kurs_WORKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet.xss">
+      <DependentUpon>_Kurs_WORKDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet1.xsc">
+      <DependentUpon>_Kurs_WORKDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet1.xss">
+      <DependentUpon>_Kurs_WORKDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet10.xsc">
+      <DependentUpon>_Kurs_WORKDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet10.xss">
+      <DependentUpon>_Kurs_WORKDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet11.xsc">
+      <DependentUpon>_Kurs_WORKDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet11.xss">
+      <DependentUpon>_Kurs_WORKDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet12.xsc">
+      <DependentUpon>_Kurs_WORKDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet12.xss">
+      <DependentUpon>_Kurs_WORKDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet13.xsc">
+      <DependentUpon>_Kurs_WORKDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet13.xss">
+      <DependentUpon>_Kurs_WORKDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet14.xsc">
+      <DependentUpon>_Kurs_WORKDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet14.xss">
+      <DependentUpon>_Kurs_WORKDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet15.xsc">
+      <DependentUpon>_Kurs_WORKDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet15.xss">
+      <DependentUpon>_Kurs_WORKDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet2.xsc">
+      <DependentUpon>_Kurs_WORKDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet2.xss">
+      <DependentUpon>_Kurs_WORKDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet3.xsc">
+      <DependentUpon>_Kurs_WORKDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet3.xss">
+      <DependentUpon>_Kurs_WORKDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet4.xsc">
+      <DependentUpon>_Kurs_WORKDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet4.xss">
+      <DependentUpon>_Kurs_WORKDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet5.xsc">
+      <DependentUpon>_Kurs_WORKDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet5.xss">
+      <DependentUpon>_Kurs_WORKDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet6.xsc">
+      <DependentUpon>_Kurs_WORKDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet6.xss">
+      <DependentUpon>_Kurs_WORKDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet7.xsc">
+      <DependentUpon>_Kurs_WORKDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet7.xss">
+      <DependentUpon>_Kurs_WORKDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet8.xsc">
+      <DependentUpon>_Kurs_WORKDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet8.xss">
+      <DependentUpon>_Kurs_WORKDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet9.xsc">
+      <DependentUpon>_Kurs_WORKDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet9.xss">
+      <DependentUpon>_Kurs_WORKDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet_Otchets1.xsc">
+      <DependentUpon>_Kurs_WORKDataSet_Otchets1.xsd</DependentUpon>
+    </None>
+    <None Include="_Kurs_WORKDataSet_Otchets1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Kurs_WORKDataSet_Otchets1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Kurs_WORKDataSet_Otchets1.xss">
+      <DependentUpon>_Kurs_WORKDataSet_Otchets1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_21806975-stock-photo-fitness-gym-with-sports-equipment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\а.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\а1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_53041219-stock-photo-modern-gym-interior-with-various.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_53041219-stock-photo-modern-gym-interior-with-various %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_14043607-stock-photo-college-gym-49ers-football-team.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фитнес-клуб-с-гантелями-строки-гантелей-металла-на-шкафе-для-150233004.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

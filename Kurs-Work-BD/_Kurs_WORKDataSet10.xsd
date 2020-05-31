@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Kurs_WORKDataSet10" targetNamespace="http://tempuri.org/_Kurs_WORKDataSet10.xsd" xmlns:mstns="http://tempuri.org/_Kurs_WORKDataSet10.xsd" xmlns="http://tempuri.org/_Kurs_WORKDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="KW_ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KW_ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Kurs_Work_BD.Properties.Settings.GlobalReference.Default.KW_ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Отчет_тренировкиTableAdapter" GeneratorDataComponentClassName="Отчет_тренировкиTableAdapter" Name="Отчет_тренировки" UserDataComponentName="Отчет_тренировкиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KW_ConnectionString (Settings)" DbObjectName="[Kurs-WORK].dbo.Отчет_тренировки" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_сотрудника, Фамилия, Имя, Дата, Код_тренировки, Время_начала, Длительность_часов, Наименование_услуги, Номер_зала FROM dbo.Отчет_тренировки</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_сотрудника" DataSetColumn="Код_сотрудника" />
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+              <Mapping SourceColumn="Код_тренировки" DataSetColumn="Код_тренировки" />
+              <Mapping SourceColumn="Время_начала" DataSetColumn="Время_начала" />
+              <Mapping SourceColumn="Длительность_часов" DataSetColumn="Длительность_часов" />
+              <Mapping SourceColumn="Наименование_услуги" DataSetColumn="Наименование_услуги" />
+              <Mapping SourceColumn="Номер_зала" DataSetColumn="Номер_зала" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Kurs_WORKDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Kurs_WORKDataSet10" msprop:Generator_UserDSName="_Kurs_WORKDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Отчет_тренировки" msprop:Generator_TableClassName="Отчет_тренировкиDataTable" msprop:Generator_TableVarName="tableОтчет_тренировки" msprop:Generator_TablePropName="Отчет_тренировки" msprop:Generator_RowDeletingName="Отчет_тренировкиRowDeleting" msprop:Generator_RowChangingName="Отчет_тренировкиRowChanging" msprop:Generator_RowEvHandlerName="Отчет_тренировкиRowChangeEventHandler" msprop:Generator_RowDeletedName="Отчет_тренировкиRowDeleted" msprop:Generator_UserTableName="Отчет_тренировки" msprop:Generator_RowChangedName="Отчет_тренировкиRowChanged" msprop:Generator_RowEvArgName="Отчет_тренировкиRowChangeEvent" msprop:Generator_RowClassName="Отчет_тренировкиRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_сотрудника" msprop:Generator_ColumnVarNameInTable="columnКод_сотрудника" msprop:Generator_ColumnPropNameInRow="Код_сотрудника" msprop:Generator_ColumnPropNameInTable="Код_сотрудникаColumn" msprop:Generator_UserColumnName="Код_сотрудника" type="xs:int" />
+              <xs:element name="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата" type="xs:dateTime" />
+              <xs:element name="Код_тренировки" msprop:Generator_ColumnVarNameInTable="columnКод_тренировки" msprop:Generator_ColumnPropNameInRow="Код_тренировки" msprop:Generator_ColumnPropNameInTable="Код_тренировкиColumn" msprop:Generator_UserColumnName="Код_тренировки">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Время_начала" msprop:Generator_ColumnVarNameInTable="columnВремя_начала" msprop:Generator_ColumnPropNameInRow="Время_начала" msprop:Generator_ColumnPropNameInTable="Время_началаColumn" msprop:Generator_UserColumnName="Время_начала" type="xs:duration" />
+              <xs:element name="Длительность_часов" msprop:Generator_ColumnVarNameInTable="columnДлительность_часов" msprop:Generator_ColumnPropNameInRow="Длительность_часов" msprop:Generator_ColumnPropNameInTable="Длительность_часовColumn" msprop:Generator_UserColumnName="Длительность_часов" type="xs:short" minOccurs="0" />
+              <xs:element name="Наименование_услуги" msprop:Generator_ColumnVarNameInTable="columnНаименование_услуги" msprop:Generator_ColumnPropNameInRow="Наименование_услуги" msprop:Generator_ColumnPropNameInTable="Наименование_услугиColumn" msprop:Generator_UserColumnName="Наименование_услуги">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_зала" msprop:Generator_ColumnVarNameInTable="columnНомер_зала" msprop:Generator_ColumnPropNameInRow="Номер_зала" msprop:Generator_ColumnPropNameInTable="Номер_залаColumn" msprop:Generator_UserColumnName="Номер_зала" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
